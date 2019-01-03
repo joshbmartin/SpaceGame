@@ -2,15 +2,15 @@
 WIDTH = 800
 HEIGHT = 600
 #Character Position
-player_x = 600
-player_y = 350
+player_x = 700
+player_y = 50
 
 def draw():
     screen.blit(images.backdrop, (0,0))
     #changing the order of mars/ship will put the ship behind mars.
     screen.blit(images.mars, (50,50))
     screen.blit(images.astronaut, (player_x, player_y))
-    screen.blit(images.ship, (130,150))
+    screen.blit(images.ship, (645,23))
 
 def game_loop():
     global player_x, player_y
