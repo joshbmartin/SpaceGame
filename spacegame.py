@@ -4,6 +4,14 @@ HEIGHT = 600
 #Character Position
 player_x = 700
 player_y = 50
+#y which list, x which list item
+room_map = [
+    [1,0,0,0,0], #fertilizer
+    [0,0,0,2,0], #spare oxygen
+    [0,0,0,0,0], #scissors
+    [0,3,0,0,0], #toothpaste
+    [0,0,0,0,6] #emergency blankets
+]
 
 def draw():
     screen.blit(images.backdrop, (0,0))
