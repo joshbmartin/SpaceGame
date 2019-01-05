@@ -16,14 +16,13 @@ room_map = [
     [1,0,0,0,1],
     [1,1,1,1,1]
 ]
-
+#checking 
 for y in range(7):
     print(room_map[y])
 
 
 def draw():
     screen.blit(images.backdrop, (0,0))
-    #changing the order of mars/ship will put the ship behind mars.
     screen.blit(images.mars, (50,50))
     screen.blit(images.astronaut, (player_x, player_y))
     screen.blit(images.ship, (645,23))
