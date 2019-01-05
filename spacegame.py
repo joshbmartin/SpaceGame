@@ -4,14 +4,22 @@ HEIGHT = 600
 #Character Position
 player_x = 700
 player_y = 50
+
 #y which list, x which list item
+#room_map is used to remember items in the room that the player is currently in
 room_map = [
-    [1,0,0,0,0], #fertilizer
-    [0,0,0,2,0], #spare oxygen
-    [0,0,0,0,0], #scissors
-    [0,3,0,0,0], #toothpaste
-    [0,0,0,0,6] #emergency blankets
+    [1,1,1,1,1],
+    [1,0,0,0,1], 
+    [1,0,1,0,1],
+    [1,0,0,0,1], 
+    [1,0,0,0,1], 
+    [1,0,0,0,1],
+    [1,1,1,1,1]
 ]
+
+for y in range(7):
+    print(room_map[y])
+
 
 def draw():
     screen.blit(images.backdrop, (0,0))
